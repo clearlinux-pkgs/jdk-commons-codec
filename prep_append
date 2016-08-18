@@ -1,0 +1,2 @@
+python3 /usr/share/java-utils/mvn_file.py : commons-codec apache-commons-codec
+python3 /usr/share/java-utils/mvn_alias.py : commons-codec:commons-codec

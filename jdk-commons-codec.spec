@@ -4,7 +4,7 @@
 #
 Name     : jdk-commons-codec
 Version  : 1.10
-Release  : 3
+Release  : 4
 URL      : http://archive.apache.org/dist/commons/codec/source/commons-codec-1.10-src.tar.gz
 Source0  : http://archive.apache.org/dist/commons/codec/source/commons-codec-1.10-src.tar.gz
 Summary  : No detailed summary available
@@ -136,7 +136,7 @@ python3 /usr/share/java-utils/mvn_alias.py : commons-codec:commons-codec
 python3 /usr/share/java-utils/mvn_build.py
 
 %install
-xmvn-install  -R .xmvn-reactor -n commons-codec-1.10-src -d %{buildroot}
+xmvn-install  -R .xmvn-reactor -n apache-commons-codec -d %{buildroot}
 
 %files
 %defattr(-,root,root,-)
@@ -145,6 +145,6 @@ xmvn-install  -R .xmvn-reactor -n commons-codec-1.10-src -d %{buildroot}
 %defattr(-,root,root,-)
 /usr/share/java/apache-commons-codec.jar
 /usr/share/java/commons-codec.jar
-/usr/share/maven-metadata/commons-codec-1.10-src.xml
+/usr/share/maven-metadata/apache-commons-codec.xml
 /usr/share/maven-poms/apache-commons-codec.pom
 /usr/share/maven-poms/commons-codec.pom
